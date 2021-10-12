@@ -14,31 +14,47 @@ a{
     cursor: pointer;
 }
 
+.nav_color{
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-color-div {
+    width: 100%;
+    max-width: 1300px;
+    height: 5px;
+    background: linear-gradient(to right,#514EA6, #A9B9D9); 
+    background-position: center;
+}
+
 .nav_items{
     display: flex;
     justify-content: center;
-    background-color: #F2F2F2;
-    align-content: center;
 }
 
 .nav-section {
     height: 80px;
     display: flex;
-    justify-content: center;
-    align-content: center;
     list-style: none;
+    width: 100%;
+    max-width: 1300px;
+    background-color: #F2F2F2;
+    justify-content: flex-start;
+    align-content: center;
 }
 
 .nav-section li {
-    margin: auto;
+    margin: auto 0;
 }
 
 .nav-section a {
     font-size: 1.8rem;
-    padding: 10px;
+    padding: 0 30px;
+    color: #47458C;
 }
 
-.nav-section .nav-section_menu-icon{
+.nav-section_menu-icon{
     background-image: url('/resource/logo.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -47,8 +63,27 @@ a{
     height: 80px;
 }
 
-.nav_color, div {
+.first{
+    position: relative;
+    text-align: center;
+}
+
+.first_image{
+    background-image: url('/resource/Fotos-Lozano-07-1.png');
     width: 100%;
-    height: 5px;
-    background: linear-gradient(to right,#514EA6, #A9B9D9); 
- }
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.first_title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first_title h3{
+    font-size: 3.2rem;
+    color: #F2F2F2;
+}
