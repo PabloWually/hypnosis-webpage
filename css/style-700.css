@@ -1,0 +1,24 @@
+.menu-btn {
+    display: none;
+}
+.nav_items .nav-section {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    padding: 0px;
+    position: static;
+    transform: translateX(0px);
+    background: none;
+    justify-content: flex-start;
+    align-content: center;
+    opacity: 1;
+} 
+.nav_items .nav-section li {
+    display: flex;
+}
+.nav_items .nav-section a {
+    font-size: 1.8rem;
+    padding: 0 auto;
+    color: #47458C;
+    text-align: center;
+}

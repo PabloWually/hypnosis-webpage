@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odonto Soluciones</title>
-    <link rel="shortcut icon" href="./resource/logo.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style-700.css" media="(min-width: 700px)">
+    <link rel="shortcut icon" href="./resource/logo.png">
     <script src="https://kit.fontawesome.com/d585dff03a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,10 +16,9 @@
             <div class="nav-color-div"></div>
         </nav>  
         <nav class="nav_items">
+            <div class="menu-btn"><i class="fas fa-bars"></i></div>
+            <img src="/resource/logo.png" alt="Logo Odonto Soluciones" class="nav-section_menu-icon">
             <ul class="nav-section">
-                <li class="nav-section_menu-icon">
-                    <a href="./index.html"></a>
-                </li>
                 <li>
                     <a href="./index.html">Home</a>
                 </li>
@@ -32,18 +32,13 @@
                     <a href="">Contactos</a>
                 </li>
             </ul>
-            <ul class="nav-social">
-                <li><i class="fab fa-whatsapp"></i></li>
-                <li><i class="fab fa-facebook"></i></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-            </ul>
         </nav>
     </header>
     <main>
-        <section class="first">
+        <div class="first">
             <img class="first_image"/>
             <div class="first_title"><h3>Hora de sonreir!</h3></div>
-        </section>
+        </div>
         <section>
             <div class="block-service">
                 <div class="feature-block">
@@ -81,6 +76,34 @@
                 </div>            
             </div>
         </section>
+        <section class="main-product-detail">
+            <div class="product-detail--title">
+                <h2>¿Qué servicios ofrecemos?</h2>
+            </div>
+            <section class="product-cards-container">
+                <article class="product-card">
+                    <img src="./resource/produc1.jpg" alt="Odontologia General" class="product-card--img">
+                    <p class="product-card--title">Odontologia General</p>
+                </article>
+                <article class="product-card">
+                    <img src="./resource/product2.jpg" alt="Blanqueamiento Dental" class="product-card--img">
+                    <p class="product-card--title">Blanqueamiento Dental</p>
+                </article>
+                <article class="product-card">
+                    <img src="./resource/product3.jpg" alt="Implantes dentale" class="product-card--img">
+                    <p class="product-card--title">Implantes dentales</p>
+                </article>
+                <article class="product-card">
+                    <img src="./resource/product4.jpg" alt="Extraccion de muelas" class="product-card--img">
+                    <p class="product-card--title">Extraccion de muelas</p>
+                </article>
+            </section>
+        </section>
+        <section class="color-section-main">
+            <h2>Conocenos hoy!</h2>
+        </section>
+
     </main>
+    <script src="./main.js"></script>
 </body>
 </html>
