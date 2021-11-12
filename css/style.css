@@ -190,6 +190,7 @@ ul{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
 }
 .product-card--title{
     margin-top: 20px;
@@ -208,7 +209,30 @@ ul{
     background: linear-gradient(207.8deg,#514EA6 16.69%, #A9B9D9 100%); 
 }
 .color-section-main h2{
-    padding-top: 90px;
+    padding-top: 70px;
     font-size: 2.4rem;
     color: #f2f2f2;
+}
+.color-section--social{
+    margin-top: 10px;
+}
+.color-section--social a{
+    margin: 0 10px;
+    font-size: 3rem;
+    color: var(--just-white);
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: 40px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: var(--warm-black);
+}
+footer p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--just-white);
 }
