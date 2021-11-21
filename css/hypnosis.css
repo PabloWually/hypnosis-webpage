@@ -1,24 +1,40 @@
+/*
+1. Position
+2. Box model
+3. Tipography
+4. View
+5. Others
+*/
+:root{
+    /*colors*/
+    --main-color: #1183D4;
+    --secondary-color: #02b6be;
+    --logo-primary:#514EA6;
+    --logo-secondary: #A9B9D9;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --just-white: #f2f2f2;
+}
 * {
-    box-sizing: border box;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
 html {
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 a{
     text-decoration: none;
     cursor: pointer;
 }
-
-.nav_color{
-    display: flex;
-    justify-content: center;
-
+ul{
+    list-style: none;
 }
+main{
+    background-color: var(--warm-black);
+}
+/*Navigation bar style*/
 
 .nav-color-div {
     width: 100%;
@@ -26,47 +42,53 @@ a{
     background: linear-gradient(to right,#514EA6, #A9B9D9); 
     background-position: center;
 }
-
 .nav_items{
     display: flex;
-    justify-content: center;
-    background-color: #F2F2F2;
+    height: 60px;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
 }
-
-.nav-section {
-    height: 80px;
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: flex-start;
-    align-content: center;
+.menu-btn{
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 30px;
+    z-index: 2;
+    font-size: 2rem;
+    cursor: pointer;
 }
-
-.nav-social{
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
-
-.nav-section li {
-    margin: auto 0;
-    display: flex;
-}
-
-.nav-section a {
-    font-size: 1.8rem;
-    padding: 0 3rem;
-    color: #47458C;
-    text-align: center;
-}
-
-.nav-section_menu-icon{
-    background-image: url('/resource/logo.png');
+.nav_items .nav-section_menu-icon{
+    height: 60px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 10rem;
-    width: 150px;
-    height: 80px;
+    background-size: 100px;
+}
+.nav-section {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    height: 100%;
+    transform: translateX(-400px);
+    padding: 30px;
+    opacity: 1;
+    transition: transform 0.5s ease-in-out;
+}
+.nav_items .nav-section.show{
+    transform: translateX(-20px);
+}
+.nav_items .nav-section li {
+    padding: 1.8rem 3rem;
+    margin: auto 0;
+}
+.nav-section a {
+    font-size: 1.4rem;
+    color: #f2f2f2;
+    text-align: center;
 }
 .hypnosis-text{
     display: flex;

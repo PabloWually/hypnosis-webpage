@@ -1,8 +1,19 @@
-.product-cards-container{
+.professionals-cards-container{
     display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    position: relative;
+    opacity: 0;
+    left: 100px;
 }
-.product-card{
-    
+.professionals-cards-container__efect{
+    left: 0px;
+    opacity: 1;
+    transition: 1s linear;
+}
+.professional-card{
+    min-width: 200px;
+}
+.block-service{
+    display: flex;
 }

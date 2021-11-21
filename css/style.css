@@ -7,7 +7,10 @@
 */
 :root{
     /*colors*/
-    --main-color: #01aeac;
+    --main-color: #1183D4;
+    --secondary-color: #02b6be;
+    --logo-primary:#514EA6;
+    --logo-secondary: #A9B9D9;
     --warm-black: #201e1c;
     --black: #282623;
     --just-white: #f2f2f2;
@@ -28,7 +31,9 @@ a{
 ul{
     list-style: none;
 }
-
+main{
+    background-color: var(--warm-black);
+}
 /*Navigation bar style*/
 
 .nav-color-div {
@@ -48,7 +53,7 @@ ul{
 .menu-btn{
     display: block;
     position: absolute;
-    top: 35px;
+    top: 23px;
     right: 30px;
     z-index: 2;
     font-size: 2rem;
@@ -56,7 +61,6 @@ ul{
 }
 .nav_items .nav-section_menu-icon{
     height: 60px;
-    /*background-image: url('/resource/logo.png');*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100px;
@@ -82,7 +86,7 @@ ul{
     margin: auto 0;
 }
 .nav-section a {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #f2f2f2;
     text-align: center;
 }
@@ -93,11 +97,13 @@ ul{
     position: relative;
     text-align: center;
     border: 0;
+    margin-bottom: 70px;
 }
 .first_image{
     width: 100%;
     height: 50vh;
     background: url('/resource/smile-large.jpg') no-repeat center center/cover;
+
 }
 .first_title{
     position: absolute;
@@ -109,10 +115,36 @@ ul{
     font-size: 3.2rem;
     color: white;
 }
-
+.first-hipnosis-text{
+    position: absolute;
+    width: 80%;
+    min-width: 280px;
+    height: auto;
+    padding: 15px;
+    background-color: var(--main-color);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+.first-hipnosis-text p{
+    font-family: 'Contrail One', cursive;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: #f2f2f2;
+    margin-bottom: 10px;
+}
+.first-hipnosis-text button{
+    width: 90px;
+    height: 30px;
+    font-family: 'Contrail One', cursive;
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+    border-radius: 8px;
+}
 /*Block of service*/
-
 .block-service{
+    padding-top: 10px;
     margin: 0 auto;
 }
 .feature-block{
@@ -127,7 +159,7 @@ ul{
     margin: 2rem auto;
 }
 .feature-block_logo i{
-    color: #004B5E;
+    color: var(--just-white);
     font-size: 7rem;
 }
 .feature-block_title, .feature-block_text{
@@ -136,25 +168,24 @@ ul{
     margin: 1rem 2rem;
 }
 .feature-block_title h3{
-    color: #002F3B;
+    color: var(--just-white);
     font-size: 2.3rem;
 }
 .feature-block_text p{
-    color: #002F3B;
+    color: var(--just-white);
     font-size: 2rem;
     text-align: center;
 }
-
 /*Product cards title*/
 
-.main-product-detail{
+.main-professionals-detail{
     width: 100%;
     min-width: 320px;
     height: auto;
     padding: 20px 10px;
-    background-color: var(--warm-black);
+    background-color: var(--just-white);
 }
-.product-detail--title{
+.professionals-detail--title{
     width: 90%;
     min-width: 288px;
     height: auto;
@@ -162,41 +193,50 @@ ul{
     margin: 0 auto;
     text-align: center;   
 }
-.product-detail--title h2{
+.professionals-detail--title h2{
     margin-bottom: 20px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
-    color: var(--just-white);
+    color: var(--warm-black);
 }
 
 /*Product card content*/
 
-.product-card{
+.professional-card{
     width: 90%;
-    min-width: 288px;
     max-width: 400px;
-    height: auto;
+    min-width: 288px;
+    height: 500px;
     margin: 15px auto;
     padding: 15px;
     text-align: center;
-    background-color: var(--black);
+    background: linear-gradient(207.8deg, var(--main-color) 16.69%, #A9B9D9 100%); /*var(--logo-primary);*/
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
-.product-card--img{
-    width: 100%;    
-    min-width:200px;
+.professional-card img{
+    width: 200px;    
+    height:200px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 50%;
 }
-.product-card--title{
+.professional-description{
     margin-top: 20px;
-    font-size: 2.4rem;
+}
+.professional-card h3{
+    margin-bottom: 15px;
+    font-size: 1.6rem;
     font-weight: bold;
-    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.professional-card ul li{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 400;
     color: var(--just-white);
 }
 
@@ -206,7 +246,7 @@ ul{
     width: 100%;
     height: 200px;
     text-align: center;
-    background: linear-gradient(207.8deg,#514EA6 16.69%, #A9B9D9 100%); 
+    background: linear-gradient(#A9B9D9, #514EA6); 
 }
 .color-section-main h2{
     padding-top: 70px;
