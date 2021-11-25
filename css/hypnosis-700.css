@@ -1,27 +1,42 @@
-.menu-btn {
-    display: none;
+/*
+1. Position
+2. Box model
+3. Tipography
+4. View
+5. Others
+*/
+:root{
+    /*colors*/
+    --main-color: #1183D4;
+    --secondary-color: #02b6be;
+    --logo-primary:#514EA6;
+    --logo-secondary: #A9B9D9;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --just-white: #f2f2f2;
+    --bitcoin-orange: #f7931a;
+    --font-grey: #323b44;
 }
-.nav_items .nav-section {
-    display: flex;
-    height: 80px;
-    width: 100%;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hypnosis uses*/
+
+.span-uses{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 15px;
+    place-content: center;
+}
+.span-uses img{
+    margin: 25px 12px;
+}
+.span-uses ul{
+    margin: 20px 0px;
+}
+.span-uses ul li{
     padding: 0px;
-    position: static;
-    transform: translateX(0px);
-    background: none;
-    justify-content: flex-start;
-    align-content: center;
-    opacity: 1;
-} 
-.nav_items .nav-section li {
-    display: flex;
-}
-.nav_items .nav-section a {
-    font-size: 1.8rem;
-    padding: 0 auto;
-    color: #47458C;
-    text-align: center;
-}
-.first{
-    margin-bottom: 50px;
 }

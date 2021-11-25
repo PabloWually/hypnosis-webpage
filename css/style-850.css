@@ -1,10 +1,29 @@
+.benefits-content-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    place-items: center; 
+    transition: transform 0.5s ease-in-out;
+}
+.benefits-card{
+    max-width: 400px;
+    padding: 0;
+    border-radius: 10px;
+}
+.benefits-card img{
+    max-width: 400px;
+    max-height: 400px;
+    padding: 0;
+    border-radius: 10px;
+}
+.benefits-card div{
+    align-items: center;
+}
 .professionals-cards-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
-    position: relative;
     opacity: 0;
-    left: 100px;
 }
 .professionals-cards-container__efect{
     left: 0px;
@@ -16,4 +35,7 @@
 }
 .block-service{
     display: flex;
+}
+.first-hipnosis-text p{
+    font-size: 2.4rem;
 }
